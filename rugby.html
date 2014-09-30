@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rugby</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="responsiveslides.css">
+  <link rel="stylesheet" href="rugby.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+  
+</head>
+<body>
+  <div id="wrapper">
+
+
+
+    <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="images/abscrum.jpg" alt="Scrum">
+          <p id="title">RUGBY: A Beginner's Guide</p>
+        </li>
+        <li>
+          <iframe width="520" src="http://www.thinglink.com/card/573301348930420736" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+        <p class="caption">Rugby has 15 positions on each side. Each have their own duties and require different skills and body types.</p>
+        <p id="positions">Positions</p>
+        </li>
+        <li>
+          <img src="images/movements.jpg" alt="">
+          <p class="caption">The rugby ball can be moved in one of three ways: running, passing, or kicking. If passed, the ball MUST be passed backwards.</p>
+          <p id="moving">Moving the Ball</p>
+        </li>
+        <li>
+          <iframe width="960" height="640" src="http://www.thinglink.com/card/573316077874839552" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+        <p id="tackle">Tackling</p>
+        <p class="caption">In order to stop the offensive team's progress down the field, the defense must make tackles. Rugby tackles are made with the shoulder and there are certain requirements for a proper tackle that players must observe in order to avoid injury and penalty.</p>
+        </li>
+        
+        <li>
+          <iframe width="3600" height="2700" src="http://www.thinglink.com/card/573332388164141056" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+        <p class="caption">Play in rugby only stops when the ball goes out of bounds, or a player commits an infraction. To restart play, there are line outs and scrums.</p>
+        <p id="resetting">Resetting Play</p>
+        </li>
+        <li>
+          <iframe width="480" height="320" src="http://www.thinglink.com/card/573338729284894720" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+        <p class="caption">The goal in rugby is to score the most points in the 80 minute game. In order to do this, a team must work their way to the opposite end of the field to score.</p>
+        <p id="scoring">Scoring</p>
+        </li>
+       <li>
+        <iframe src="quiz/quiz.html"></iframe>
+       </li>
+       <li>
+        <h1>Sources</h1>
+        <h2>Pictures</h2>
+        <h3>UNC Women's Rugby pictures by Katy Folk</br>
+        http://www.klcfotos.com/p66710827</br>
+          http://www.sarugbymag.co.za/blog/details/the-blacks-vs-boks-debate</br>
+http://scrumhit.hubpages.com/hub/Understand-Rugby-Union-Part-2-Team-Positions#</br>
+http://keepingscore.blogs.time.com/2011/09/08/a-brief-history-of-the-rugby-world-cup/slide/try-try-again/</br></h3>
+        <h2>Information</h2>
+        <h3>http://www.uncwrfc.org/about-rugby/</br>
+        http://www.rugby-sidestep-central.com/basic-rugby-rules.html</h3>
+       </li>
+      </ul>
+    </div>
+
+    
+  </div>
+</body>
+</html>
